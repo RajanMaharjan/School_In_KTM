@@ -9,7 +9,7 @@ higher secondary -->
 blue Undefined --> black
 
 for quick demo :
-rawgit.com/RajanMaharjan/School_In_KTM/master/index.html
+http://rawgit.com/RajanMaharjan/School_In_KTM/master/index.html
 
 Used Resources :
 
