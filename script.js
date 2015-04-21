@@ -32,7 +32,7 @@ osmTiles = L.tileLayer('http://otile1.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png'
 
 //lets create a function that draws the vector layers on the map
 
-	function drawVectorLayer(data){
+	function drawVectorLayer	(data){
 		vectorsFromGeojson = L.geoJson(data);
 		map.addLayer(vectorsFromGeojson);
 	}
@@ -90,7 +90,7 @@ function onEachFeaturedetails(feature, layer) {
 		mouseout: resetHighlight,
 		click: zoomToFeature
 
-	})
+	});
 	//bind a popup with feature's geojson notation as its content..the popup opens up when user clicks on the feature..
 	layer.bindPopup("School Name : "+feature.properties.name+"<br/>"
 		+"Operator Type : "+feature.properties["operator:type"]+"<br/>"
@@ -111,7 +111,7 @@ function getColor(feature) {
     }
 }
 
-
+//draw vector data
 function drawVectorLayer(data){
 
 //we have our geojson layer ready, but wait..we need to add it to the map to be able to see it..
